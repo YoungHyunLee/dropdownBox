@@ -1,7 +1,7 @@
 /*!
- * This work (css sources) is licensed under the Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License.
- * 이 css 저작물은 크리에이티브 커먼즈 저작자 표시-비영리-변경 금지 3.0 Unported 라이선스에 따라 이용할 수 있습니다.
- * http://creativecommons.org/licenses/by-nc-nd/3.0/
+ * This work (this sources) is licensed under the Creative Commons Attribution-ShareAlike Works 3.0 Unported License.
+ * 이 저작물은 크리에이티브 커먼즈 저작자 표시-동일조건변경허락 3.0 Unported 라이선스에 따라 이용할 수 있습니다.
+ * https://creativecommons.org/licenses/by-sa/3.0/
  * Copyrightⓒ By numbernori.
 
  * @Author: Young Hyun Lee (2016-07-23)
