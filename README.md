@@ -43,7 +43,7 @@ $mySelectBox.ctmDropdownBox({width : '200', maxHeight : '200'});
 
 ```
 
-If you want more example, see *index.html*.
+If you want more example, see *index.html*.  
 더 많은 예제를 원하시면, index.html을 참고해주세요.
 
 ## License
