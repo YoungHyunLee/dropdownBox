@@ -8,6 +8,7 @@ JS로 만들어진 심플한 dropdown 입니다.
 ## Confition
 
 This component is working in IE 9, 10, 11 & chrome & mobile... and so on.
+
 이 컴포넌트는 ie 9이상 또는 모바일 그리고 일반 메이저 브라우저에서 동작합니다.
 (모바일 체크에 대해서는 js를 참고하세요. 원하는 조건대로 모바일을 체크할 수 있습니다.)
 
@@ -43,7 +44,7 @@ $mySelectBox.ctmDropdownBox({width : '200', maxHeight : '200'});
 
 ```
 
-If you want more example, see *index.html*.  
+If you want more example, see *index.html*.
 더 많은 예제를 원하시면, index.html을 참고해주세요.
 
 ## License
