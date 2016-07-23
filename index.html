@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
+
+<title>ES6 Test</title>
+<link href="./resources/css/common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="wrap">
+  <div class="temp_cnt">
+    <ol>
+      <li>
+        <h1>1. 일반적인 기본 형태.</h1>
+        <select id="isItSelect">
+          <option data-myValue="1" selected="selected">test my msg1</option>
+          <option data-myValue="2">test my msg2</option>
+          <option data-myValue="3">test my msg3</option>
+          <option data-myValue="4">test my msg4</option>
+          <option data-myValue="5">test my msg5</option>
+          <option data-myValue="6">test my msg6</option>
+        </select>
+        <pre>
+          var $mySelectBox = $('#isItSelect');
+          // select에 change 이벤트를 적용시켜주시면, 일반적인 select처럼 동작합니다.
+          $mySelectBox.on('change', function(){
+            alert('날 클릭했냐옹!!!');
+          });
+
+          // FIRE!!
+          $mySelectBox.ctmDropdownBox({width : '200', maxHeight : '200'});
+        </pre>
+      </li>
+      <li>
+        <h1>2. id값 & selected값이 없는 형태</h1>
+        <select class="temp_select_class">
+          <option data-myValue="1">test my msg1</option>
+          <option data-myValue="2">test my msg2</option>
+          <option data-myValue="3">test my msg3</option>
+          <option data-myValue="4">test my msg4</option>
+          <option data-myValue="5">test my msg5</option>
+          <option data-myValue="6">test my msg6</option>
+        </select>
+        <pre>
+          $('.temp_select_class').ctmDropdownBox({width : '200', maxHeight : '200', theme : 'temp_theme1'});
+        </pre>
+      </li>
+      <li>
+        <h1>3. 프리하게 사용하자! 프리한 형태.</h1>
+        <select class="temp_select_class2">
+          <option data-myValue="1">test my msg1</option>
+          <option data-myValue="2">test my msg2</option>
+          <option data-myValue="3">test my msg3</option>
+          <option data-myValue="4">test my msg4</option>
+          <option data-myValue="5">test my msg5</option>
+          <option data-myValue="6">test my msg6</option>
+        </select>
+        <pre>
+          // 너비등을 주지 않으면, 내부 select박스의 크기만큼, 알아서 사이즈가 정해짐.
+          $('.temp_select_class2').ctmDropdownBox();
+        </pre>
+      </li>
+    </ol>
+    <p>
+      참고로 모바일로 보시면 기본으로 동작하도록 되어 있습니다. <br>
+      겉 이미지는 같으나, 터치시 native select로 동작한다는 뜻이지요.
+    </p>
+  </div>
+</div>
+
+
+<script src="./resources/js/jquery-3.1.0.min.js"></script>
+<script src="./resources/js/ctmDropdownBox.js"></script>
+
+<script>
+  $('#isItSelect').on('change', function(){
+    alert('날 클릭했냐옹!!!');
+  });
+  $('#isItSelect').ctmDropdownBox({width : '200', maxHeight : '200'});
+
+  $('.temp_select_class').ctmDropdownBox({width : '200', maxHeight : '200', theme : 'temp_theme1', placeholder : "날 선택해라 냥!!"});
+
+  $('.temp_select_class2').ctmDropdownBox();
+</script>
+</body>
+</html>
